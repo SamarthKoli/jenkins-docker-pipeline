@@ -6,7 +6,6 @@ pipeline{
         DOCKER_CRED = "dockerhub-creds"
     }
     tools{
-        jdk 'JDK21'
         maven 'jenkins-maven'
     }
 
