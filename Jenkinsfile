@@ -26,8 +26,8 @@ pipeline{
         stage('push image'){
             steps{
                   withCredentials([usernamePassword(credentialsId: DOCKER_CRED, usernameVariable: 'USER', passwordVariable: 'PASS')]) {
-                    sh "echo $PASS | docker login -u $USER --password-stdin"
-                    sh "docker push ${IMAGE}"
+                    bat "echo $PASS | docker login -u $USER --password-stdin"
+                    bat "docker push ${IMAGE}"
             }
         }
     }
