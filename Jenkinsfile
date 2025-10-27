@@ -2,7 +2,7 @@ pipeline{
     agent any
 
      environment {
-        IMAGE = "yourdockerhubusername/simple-jenkins-docker:latest"
+        IMAGE = "samarthkoli/simple-jenkins-docker:latest"
         DOCKER_CRED = "dockerhub-creds"
     }
     tools{
