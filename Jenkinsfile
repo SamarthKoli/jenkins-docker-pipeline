@@ -3,7 +3,7 @@ pipeline{
 
      environment {
         IMAGE = "samarthkoli/simple-jenkins-docker:latest"
-        DOCKER_CRED = "dockerhub-creds"
+        DOCKER_CRED = "dockerhub-cred"
     }
     tools{
         maven 'jenkins-maven'
